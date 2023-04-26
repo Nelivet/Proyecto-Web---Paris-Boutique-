@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+:root {
+  --bi:#3E4040   ;
+  --silver:#C0C0C0;
+  --dimgray: #696969;
+  --gray-light: #ffffff;
+  --slategray: #708090;
+  --d: #c9c6c6;
+  --e:#1b1a1d;
+ 
+}
+
+body {
+background-image: url("/img/nosotros/ba1.jpeg");
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.menu {
+  background-color: var(--bi);
+  width: 100%;
+  display: flex;
+  margin-bottom: 80px;
+
+}
+/*navbar*/
+.menu a {
+  padding: 10px 20px;
+  font-size: 20px;
+  margin: 0 10px;
+  color: var(--d);
+  text-decoration: none;
+  justify-content: center;
+
+}
+.n:hover { 
+  background-color:#797678;
+  color:var(--e);
+  transition: all 2s;
+
+}
+
+/*logo*/
+.contenido-logo{
+  width: 100%;
+  display: flex;
+  margin-left: 60px;
+  align-items: center;
+  flex-wrap: wrap;
+
+  }
+
+.logo {
+  width: 250px;
+
+  }
+    /* trabajar con formulario*/
+    .contenido-formulario {
+        width: 100%;
+        text-align:center;
+        color: var(--bi);
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        
+      
+      }
+    
+     .contenido-formulario .subtitulo {
+        width: 90%;
+        margin-bottom:40px;
+    }
+    
+    .subtitulo  h2 {
+      font-size: 19px;
+      text-transform: uppercase;
+      font-style: normal;
+      color: var(--dimgray);
+
+   
+     
+    }
+    
+    .subtitulo::after {
+      /* linea*/
+      content: ""; /**insertar contenido*/
+      display: inline-block;
+      height: 1px;
+      width: 100%;
+      background: var(--e);
+      position: relative;
+      top: -25px;
+ 
+    }
+    .contenido-formulario .titulo h3 {
+        font-size: 20px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        color: var(--e);
+      }
+      
+    .contenido-formulario p {
+        color: var(--dimgray);
+        font-size: 17px;
+        margin-bottom: 10px;
+    
+      }  
+
+      .contenido-formulario a {
+          margin-top: 0;
+          text-decoration: none;
+      }
+      /*--------formulario*/
+      label{color: var(--bi); font-size: 16px;}
+     .boton{
+	background: var(--bi);
+	color: var(--e);
+	font-weight: bold;
+	padding: 8px 10px;
+	border-radius: 7px;
+	width: 150px;
+	margin: 8px 12px;
+  cursor: pointer;
+}
+.formulario{
+	border-radius: 14px;
+	border: 2px solid var(--e);
+	margin: 14px;
+	padding: 20px;
+
+}
+.respuesta{
+	border:2px solid;
+	padding: 13px;
+	width: 500px;
+	height: 150px;
+	border-radius: 8px;
+	margin: 20px 0;
+	border: 2px solid var(--dimgray);
+	font-size: 17px;
+}
+/*trabajar con galeria*/
+
+.galeria {
+
+  align-items: center;
+  margin-bottom: 100px;
+
+}
+
+.galeria-items {
+  display: flex;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: 30px 0px;
+}
+
+.galeria-item {
+  min-width: 200px;
+  max-width:350px;
+  height: 300px;
+  cursor: pointer; 
+}
+
+.galeria-item img {
+  width: 100%;
+  height: 100%;
+
+}
+
+    /* trabajar con footer*/
+
+    .contenedor-footer{
+      display: flex;
+      background-color: var(--e);
+      bottom: 0;
+      width: 100%;
+   margin-top: 100px;
+
+
+     }
+      
+    .footer-col {
+      width: 45%;
+      margin-left: 40px;
+    }
+    
+    footer h4 {
+      font-size: 25px;
+      margin-top: 20px;
+      color: var(--dimgray);
+    
+    }
+    
+    footer a {
+      text-decoration: none;
+      color: var(--dimgray);
+      line-height : 30px; 
+      padding: 10px; 
+   
+    }
+    
+    footer a:hover {
+      color: var(--d);
+    }
+   
+   footer a img {
+    
+      border-radius: 100%;
+      width: 50px;
+      transition: 0.3s ease all;
+      margin-left: -10px; 
+    }
+    
+    
+   p {
+      padding: 8px;
+      color: var(--d);
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+    

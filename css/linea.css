@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+:root {
+  --bi:#3E4040   ;
+  --silver:#C0C0C0;
+  --dimgray: #696969;
+  --gray-light: #ffffff;
+  --slategray: #708090;
+  --d: #c9c6c6;
+  --e:#1b1a1d;
+ 
+}
+
+body {
+
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.menu {
+  background-color: var(--bi);
+  width: 100%;
+  display: flex;
+
+}
+/*navbar*/
+.menu a {
+  padding: 10px 20px;
+  font-size: 20px;
+  margin: 0 10px;
+  color: var(--d);
+  text-decoration: none;
+  justify-content: center;
+
+}
+
+/*logo*/
+.contenido-logo{
+  width: 100%;
+  display: flex;
+  margin-left: 60px;
+  align-items: center;
+  flex-wrap: wrap;
+
+  }
+
+.logo {
+  width: 250px;
+
+  }
+
+  /* trabajar concontenido de pagina*/
+  .contenido-catalogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .conte {
+    height: 350px; /* achica el contenido del a tarjeta*/
+    width: 20%;
+    box-shadow: 0 0 7px #111;
+    margin: 40px 40px;
+    border-radius: 20px;
+  }
+  .conte .caja{
+    height: 60%; /*achica la tarjeta*/
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 5px; /*aleja los parrFOS DE PRECIOhacia abajo strike*/
+  }
+  .caja img {
+    margin: auto;
+    display: block;
+    border-radius: 20px 20px 0 0; /* borde arriba 20 px y abajo 0*/
+  }
+  .conte .angel img {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .conte .espiga img {
+    height: 100%;
+    width: 100%;
+  }
+  .conte .life img {
+    height: 100%;
+    width: 100%;
+  }
+  .conte .goldrose img {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .conte .bruno img {
+    height: 100%;
+    width: 100%;
+  }
+  .conte .cuban img {
+    height: 100%;
+    width: 100%;
+  }
+  .conte .stone img {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .conte .ancla img {
+    height: 100%;
+    width: 100%;
+  }
+  .conte .max img {
+    height: 100%;
+    width: 100%;
+  }
+  .conte .set img {
+    height: 100%;
+    width: 100%;
+  }
+  .conte .kit img {
+    height: 100%;
+    width: 100%;
+  }
+  
+  
+  .informacion {
+    height: 15%; /*desplaza ahacia arriba o abajo los precios en negrita*/
+    width: 100%;
+  }
+  
+  .informacion h1 {
+    font-size: 1.2em;
+    text-align: center;
+    color: #333;
+    margin-bottom: -10px;
+  }
+  
+  .informacion p {
+    text-align: center;
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 10px; /* separa el parrafo de envio  del strike*/
+  }
+  
+  .contenido-precio {
+    height: 15%; /*altura entre el espacio del  striker y el envio */
+    width: 30%;
+    margin: auto;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .precio {
+    width: 90px;
+  }
+  
+  .precio1 {
+    color: red;
+    font-size: 13px;
+    margin-right: 40px; /* pone margen derechoderecho para separar el precio del striker con el precio"*/
+  }
+  
+  .precio .precio2 {
+    font-size: 18px;
+    margin-left: -10px; /*pone margen isquierdo al precio 2 para centarlo mejor*/
+  }
+  
+  .precio2 a {
+    text-decoration: none;
+    color: #111;
+  }
+  @media (max-width: 900px) {
+    .conte {
+      width: 40%;
+      margin: 30px 20px;
+    }
+  }
+ 
+
+    /* trabajar con footer*/
+
+    .contenedor-footer{
+      display: flex;
+      background-color: var(--e);
+      bottom: 0;
+      width: 100%;
+     }
+      
+    .footer-col {
+      width: 45%;
+      margin-left: 40px;
+    }
+    
+    footer h4 {
+      font-size: 25px;
+      margin-top: 20px;
+      color: var(--dimgray);
+    
+    }
+    
+    footer a {
+      text-decoration: none;
+      color: var(--d);
+      line-height : 30px; 
+      padding: 10px; 
+   
+    }
+    
+    footer a:hover {
+      color: var(--dimgray);
+    }
+   
+   footer a img {
+    
+      border-radius: 100%;
+      width: 50px;
+      transition: 0.3s ease all;
+      margin-left: -10px; 
+    }
+    
+    
+   p {
+      padding: 8px;
+      color: var(--d);
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+    .descripcion{
+      z-index: 3;
+       float: left;
+       top:190px;position: absolute; 
+       background: rgba(255,255,255,0.75);
+       padding: 15px; visibility: 
+       hidden;width: 370px;}

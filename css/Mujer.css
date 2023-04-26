@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+  }
+  
+  :root {
+    --bi:#3E4040   ;
+    --silver:#C0C0C0;
+    --dimgray: #696969;
+   /* --rosybrown: #bc8f8f;*/
+    --gray-light: #ffffff;
+    --slategray: #708090;
+    --d: #c9c6c6;
+    --e:#1b1a1d;
+  }
+  
+  body {
+
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+
+/* trabajar con navbar*/
+  
+  .menu {
+    background-color: var(--bi);
+    width: 100%;
+    justify-content: center;
+    display: flex;
+
+  }
+ 
+  .menu a {
+    padding: 10px 30px;
+    font-size: 20px;
+    margin: 0 10px;
+    color: var(--d);
+    text-decoration: none;
+   
+  }
+ 
+  
+  
+  .contenido-logo{
+    width: 100%;
+    display: flex;
+    margin-left: 60px;
+    align-items: center;
+    
+    }
+
+ .logo {
+    width: 250px;
+
+    }
+
+  /* trabajar concontenido de pagina*/
+
+  .contenido-catalogo {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .conte {
+/* achica el contenido del a tarjeta*/
+    width: 400px;
+    box-shadow: 0 0 7px #111;
+    margin: 40px 40px ;
+    padding: 5px;
+
+  }
+  .conte .caja{
+  /*achica la tarjeta*/
+    width: 100%;
+   /* border-radius: 20px;*/
+    margin-bottom: 5px; /*aleja los parrFOS DE PRECIOhacia abajo strike*/
+  }
+  .caja img {
+    margin: auto;
+    display: block;
+     /* borde arriba 20 px y abajo 0*/
+  }
+  
+  .conte .ropa img {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .informacion {
+    height: 5%; /*desplaza ahacia arriba o abajo los precios en negrita*/
+    width: 100%;
+  }
+  
+  .informacion h1 {
+    font-size: 1.2em;
+    text-align: center;
+    color: #333;
+ 
+  }
+  
+  .informacion p {
+    text-align: center;
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 0px; /* separa el parrafo de envio  del strike*/
+    font-size: 18px;
+  }
+  
+  .contenido-precio {
+    height: 15%; /*altura entre el espacio del  striker y el envio */
+    width: 30%;
+    margin: auto;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .precio {
+    width: 90px;
+  }
+  
+  .precio1 {
+    color: red;
+    font-size: 13px;
+    margin-right: 40px; /* pone margen derechoderecho para separar el precio del striker con el precio"*/
+  }
+  
+  .precio .precio2 {
+    font-size: 18px;
+    margin-left: -10px; /*pone margen isquierdo al precio 2 para centarlo mejor*/
+  }
+  
+  .precio2 a {
+    text-decoration: none;
+    color: #111;
+  }
+  
+  @media (max-width: 900px) {
+    .conte {
+      width: 40%;
+      margin: 30px 20px;
+    }
+  }
+/* trabajar con footer*/
+
+.contenedor-footer{
+  display: flex;
+  background-color: var(--e);
+  bottom: 0;/* sin margenes abajo*/
+  width: 100%; /*abarca al total */
+
+ }
+  
+.footer-col {
+  width: 45%;
+  margin-left: 40px;
+}
+
+footer h4 {
+  font-size: 25px;/* tamaño letra*/
+  margin-bottom: 25px; /*espacio arriba */
+  margin-top: 20px;/*espacio abajo antes de los vinculos*/
+  color: var(--dimgray);
+
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--d);
+  line-height : 30px; /*espacio entre las linea de texto*/
+  padding: 10px; /*10px al costado isquierdo*/
+
+}
+
+footer a:hover {
+  color: var(--dimgray);
+}
+
+footer a img {
+
+  border-radius: 100%;
+  width: 50px;
+  transition: 0.3s ease all;
+  margin-left: -10px; /*menos 10 px a la isquierda*/
+}
+
+footer a img:hover {
+  transform: scale(1.2);
+}
+
+p {
+  padding: 8px;
+  color: var(--d);
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+
+ 

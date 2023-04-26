@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+  }
+  
+  :root {
+    --bi:#3E4040   ;
+    --silver:#C0C0C0;
+    --dimgray: #696969;
+    --gray-light: #ffffff;
+    --slategray: #708090;
+    --d: #c9c6c6;
+    --e:#1b1a1d;
+   
+  }
+  
+  body {
+
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+  .menu {
+    background-color: var(--bi);
+    width: 100%;
+    display: flex;
+
+  }
+ /*navbar*/
+  .menu a {
+    padding: 10px 20px;
+    font-size: 20px;
+    margin: 0 10px;
+    color: var(--d);
+    text-decoration: none;
+    justify-content: center;
+
+  }
+ 
+  
+  /*logo*/
+  .contenido-logo{
+    width: 100%;
+    display: flex;
+    margin-left: 60px;
+    align-items: center;
+    flex-wrap: wrap;
+  
+    }
+
+ .logo {
+    width: 250px;
+
+    }
+  /*trabajar con header de pagina */
+  
+    .contenido-header video {
+      width: 100%;
+      height: 450px;
+      object-fit: cover;
+      position: absolute;
+      background-attachment: fixed;
+    
+  
+    }
+    .atras {
+      position: absolute;
+      left: 80px;
+      top: 260px;
+      cursor: pointer;
+      width: 50px;
+      z-index: 3;
+  
+  }
+  
+  .adelante {
+      position: absolute;
+      right: 80px;
+      top: 260px;
+      cursor: pointer;
+      width: 50px;
+      z-index: 3;
+  }
+    .texto {
+      display: flex;
+      height:450px; /*tamaño en altura de texto*/
+      font-size: 90px;
+      font-style: italic;
+      align-items: center;/*alinear al centro al medio */
+      justify-content: center; /*alinea al centro pero arriba*/
+      color: var(--dimgray);
+      mix-blend-mode:multiply; /*para combinar el texto y el color*/
+    }
+   /*trabajar con productos */
+
+
+ .main-contenido  {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+  
+  }
+
+ .main-contenido .subtitulo {
+  width: 90%;
+  margin-bottom:20px;
+}
+
+.subtitulo  h2 {
+  font-size: 19px;
+  text-transform: uppercase;
+  font-style: normal;
+  text-align: center;
+  color: var(--dimgray);
+  margin-top: 20px;
+}
+
+.subtitulo  h2  span {
+  background-color: var(--gray-light);
+  padding: 5px 10px;
+  z-index: 2;
+  position: relative;
+
+  
+}
+
+.subtitulo::after {
+  /* linea*/
+  content: ""; /**insertar contenido*/
+  display: inline-block;
+  height: 1px;
+  width: 100%;
+  background: var(--slategray);
+  position: relative;
+  top: -25px;
+
+}
+.main-contenido .titulo h3 {
+  width: 100%;
+  font-size: xx-large;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 20px;
+  color: var(--e);
+}
+
+.main-contenido p {
+  color: var(--dimgray);
+  font-size: 17px;
+  margin-bottom: 0;
+justify-content: center;
+text-align: center;
+}
+
+.contenido-Productos {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+ .producto {
+   width: 300px;
+   height: 300px;
+   position: relative;
+   overflow: hidden;
+   margin: 30px 20px;
+   box-shadow: 0 0 7px #111;
+ }
+ 
+ .producto img {
+   width: 100%;
+   height: 100%;
+  margin-top: 0;
+  object-fit:cover;
+ }
+ 
+ .contenido-Productos .efecto {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: var(--gray-light);
+
+  
+ }
+
+ 
+ /*separador*/
+.main-contenido .separador {
+  width: 100%;
+  height: 250px;
+  background-image: url(/img/baner1.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 60px;
+}
+ 
+ /*trabajar con galeria*/
+
+.galeria {
+
+  align-items: center;
+  margin-bottom: 40px;
+ 
+}
+
+.galeria-items {
+  display: flex;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: 30px 0px;
+}
+
+.galeria-item {
+  min-width: 300px;
+  max-width: 300px;
+  height: 400px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.galeria-item img {
+  width: 100%;
+  height: 100%;
+
+
+}
+
+
+/* enlace */
+
+.enlace {
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--dimgray);
+  border-bottom: 1px solid transparent;
+  transition: 0.3s ease all;
+  margin-bottom: 60px;
+}
+
+/* trabajar con footer*/
+
+.contenedor-footer{
+    display: flex;
+    background-color: var(--e);
+    bottom: 0;
+    width: 100%; 
+  
+   }
+    
+  .footer-col {
+    width: 45%;
+    margin-left: 40px;
+  }
+  
+  footer h4 {
+    font-size: 25px;
+    margin-bottom: 25px; 
+    margin-top: 20px;
+    color: var(--dimgray);
+  
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: var(--d);
+    line-height : 30px; 
+    padding: 10px; 
+ 
+  }
+  
+  footer a:hover {
+    color: var(--dimgray);
+  }
+ 
+  footer a img {
+  
+    border-radius: 100%;
+    width: 50px;
+    transition: 0.3s ease all;
+    margin-left: -10px; 
+  }
+  
+ 
+  
+ p {
+    padding: 8px;
+    color: var(--d);
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  
